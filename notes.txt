@@ -1,0 +1,35 @@
+DrawingMaterial
+
+
+PhysicsMaterial
+    dynamic_friction => m_rollingFriction:scalar
+    static_friction => m_friction:scalar
+    bounciness => m_restitution:scalar
+
+    // air resistance
+    drag => m_linearDamping:scalar
+    angular_drag => m_angularDamping:scalar
+
+    => m_additionalDamping:bool
+    => m_additionalDampingFaction
+
+BodyInfo
+    PhysicsMaterial
+    + mass
+    + collision shape
+    + local inertia
+
+Constraint
+
+Springs
+
+
+Joins
+    - breaking force
+    - breaking torque
+
+Motor
+
+Kinematics
+
+ActionInterface
